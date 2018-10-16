@@ -1,29 +1,27 @@
 {
-  "name": "nuxt-image-browser",
-  "version": "1.0.0",
-  "description": "Image browser based on Nuxt.js",
   "author": "Niko Pettersen",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.2.0"
   },
+  "description": "Image browser based on Nuxt.js",
   "devDependencies": {
-    "nodemon": "^1.18.4",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.7.1",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "3.0.0",
-    "prettier": "1.14.3"
-  }
+    "nodemon": "^1.18.4"
+  },
+  "name": "nuxt-image-browser",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.vue --fix --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "start": "nuxt start"
+  },
+  "version": "1.0.0"
 }
