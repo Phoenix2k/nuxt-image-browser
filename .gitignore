@@ -79,3 +79,9 @@ dist
 
 # IDE
 .idea
+
+# Dot files
+.*
+!.editorconfig
+!.eslintrc.js
+!.gitignore
