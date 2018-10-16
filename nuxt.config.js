@@ -47,6 +47,7 @@ module.exports = {
 	 * Plugins to load before mounting the App
 	 */
 	plugins: [
+		{ src: '@/plugins/icons.js', ssr: true },
 		{ src: '@/plugins/vue-awesome-swiper.js', ssr: false }
 	],
 
