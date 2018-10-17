@@ -41,7 +41,14 @@ module.exports = {
 	/**
 	 * Global CSS
 	 */
-	css: [],
+	css: [
+		{ src: 'swiper/dist/css/swiper.css', lang: 'css' },
+		{ src: '@/assets/scss/variables.scss', lang: 'scss' },
+		{ src: '@/assets/scss/base.scss', lang: 'scss' },
+		{ src: '@/assets/scss/buttons.scss', lang: 'scss' },
+		{ src: '@/assets/scss/icons.scss', lang: 'scss' },
+		{ src: '@/assets/scss/swiper.scss', lang: 'scss' }
+	],
 
 	/**
 	 * Plugins to load before mounting the App

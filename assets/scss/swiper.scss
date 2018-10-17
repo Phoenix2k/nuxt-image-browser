@@ -1,0 +1,110 @@
+/**
+ * Extensions to Swiper.js
+ * http://www.idangero.us/swiper/
+ */
+
+.image-browser {
+	.swiper-slide:not(.swiper-slide-active) {
+		opacity: 0 !important;
+	}
+}
+
+.next-slide,
+.prev-slide {
+	align-items: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	margin: 1em;
+	opacity: 1;
+	transition: opacity 0.15s linear;
+
+	.icon {
+		font-size: 2em;
+		line-height: 0;
+		padding: 0.25em;
+
+		@media (min-width: $break-point-medium) {
+			font-size: 3em;
+		}
+	}
+
+	&.swiper-button-disabled,
+	&.swiper-button-disabled {
+		opacity: 0;
+	}
+}
+
+.swiper-content {
+	margin: 0 1.5em;
+	max-width: 40em;
+}
+
+.swiper-container {
+	flex: 1;
+}
+
+.swiper-container-horizontal {
+	.swiper-content {
+		align-items: center;
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+	}
+}
+
+.swiper-image-slide {
+	align-items: center;
+	justify-content: center;
+	padding-top: 18vh;
+	max-height: 78vh;
+	transition-duration: 400ms !important;
+
+	img {
+		max-height: 100%;
+	}
+
+	&:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev) {
+		visibility: hidden;
+	}
+}
+
+.swiper-pagination {
+	font-size: 0.8em;
+	position: static;
+
+	+ .button {
+		margin-top: 0.75em;
+	}
+}
+
+.swiper-pagination-wrapper {
+	bottom: 4vh;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+
+	.button-wrapper {
+		padding: 1em;
+	}
+}
+
+.swiper-slide {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.swiper-slide-column {
+	flex-direction: column;
+}
+
+.swiper-wrapper {
+	height: 100vh;
+	z-index: 1;
+}

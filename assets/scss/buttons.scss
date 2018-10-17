@@ -1,0 +1,24 @@
+.button {
+	align-items: center;
+	background: transparent;
+	border: 2px solid white;
+	display: inline-flex;
+	color: inherit;
+	font-size: 1em;
+	line-height: 1;
+	padding: 0.5em;
+	justify-content: center;
+}
+
+.button--start {
+	font-size: 2em;
+	padding: 1em;
+}
+
+.button--right .button {
+	margin-left: 0.5em;
+}
+
+.button--transparent {
+	border-color: transparent;
+}
