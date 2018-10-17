@@ -13,6 +13,7 @@
     "eslint-plugin-vue": "^4.7.1",
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.4",
+    "nuxt-sass-resources-loader": "^2.0.5",
     "sass-loader": "^7.1.0"
   },
   "name": "nuxt-image-browser",
