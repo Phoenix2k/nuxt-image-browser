@@ -1,13 +1,20 @@
 nuxt-image-browser
 ==================
-Image browser based on Nuxt.js
+> Image browser based on Nuxt.js
 
 ## Dependencies
-* [NPM](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
+* [npm](https://www.npmjs.com/)
 
 ## Installation
+Clone the repository:
+```bash
+$ git clone https://github.com/Phoenix2k/nuxt-image-browser.git
+```
+
 Install dependencies:
 ```bash
+$ cd nuxt-image-browser
 $ npm install
 ```
 
@@ -35,12 +42,17 @@ $ npm run build
 $ npm start
 ```
 
-Generate static project:
+Generate static files:
 ```bash
 $ npm run generate
 ```
+Static files are placed in the `dist` folder, which you can move on any device or server and use the `index.html` file contained within as the starting page.
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Sources
+* [Icomoon.io](https://icomoon.io/)
+* [Nuxt.js](https://nuxtjs.org/)
+* [Vue.js](https://vuejs.org/)
+* [Vue-Awesome-Swiper](https://surmon-china.github.io/vue-awesome-swiper/) based on [Swiper](http://idangero.us/swiper/)
 
 ## License
 Creative Commons &mdash; CC0 1.0 Universal (Public Domain)
