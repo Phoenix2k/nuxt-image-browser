@@ -34,6 +34,7 @@ module.exports = {
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 		'no-extra-semi': 'error',
+		'no-useless-concat': 'error',
 		'no-tabs': [
 			'error', {
 				allowIndentationTabs: true
@@ -46,10 +47,13 @@ module.exports = {
 			}
 		],
 		'objects-in-arrays': 'always',
+		'prefer-template': 'error',
 		'quote-props': [ 'error','consistent-as-needed' ],
 		'quotes': [ 'error', 'single' ],
 		'semi': [ 'error', 'always' ],
-		'space-in-parens': [ 'error', 'always' ],
+		'space-in-parens': [ 'error', 'always', { exceptions: [ 'empty' ] }],
+		'template-curly-spacing': [ 'error', 'always' ],
+		'template-tag-spacing': [ 'error', 'always' ],
 		'vue/html-closing-bracket-newline': [
 			'error', {
 				multiline: 'never',
@@ -80,6 +84,17 @@ module.exports = {
 				singleline: 6
 			}
 		],
-		'vue/script-indent': [ 'error', 'tab' ]
+		'vue/script-indent': [ 'error', 'tab' ],
+		'vue/html-self-closing': [
+			'error', {
+				html: {
+					component: 'always',
+					normal: 'always',
+					void: 'always'
+				},
+				math: 'always',
+				svg: 'always'
+			}
+		]
 	}
 };
