@@ -55,6 +55,4 @@ Static files are placed in the `dist` folder, which you can move on any device o
 * [Vue-Awesome-Swiper](https://surmon-china.github.io/vue-awesome-swiper/) based on [Swiper](http://idangero.us/swiper/)
 
 ## License
-Creative Commons &mdash; CC0 1.0 Universal (Public Domain)
-
-[![License](https://img.shields.io/badge/license-CC0%201.0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE.md)
