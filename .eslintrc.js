@@ -54,6 +54,7 @@ module.exports = {
 		'space-in-parens': [ 'error', 'always', { exceptions: [ 'empty' ] }],
 		'template-curly-spacing': [ 'error', 'always' ],
 		'template-tag-spacing': [ 'error', 'always' ],
+		'vue/component-name-in-template-casing': 0,
 		'vue/html-closing-bracket-newline': [
 			'error', {
 				multiline: 'never',
@@ -75,16 +76,6 @@ module.exports = {
 				ignores: []
 			}
 		],
-		'vue/max-attributes-per-line': [
-			'error', {
-				multiline: {
-					allowFirstLine: false,
-					max: 1
-				},
-				singleline: 6
-			}
-		],
-		'vue/script-indent': [ 'error', 'tab' ],
 		'vue/html-self-closing': [
 			'error', {
 				html: {
@@ -95,6 +86,17 @@ module.exports = {
 				math: 'always',
 				svg: 'always'
 			}
-		]
+		],
+		'vue/max-attributes-per-line': [
+			'error', {
+				multiline: {
+					allowFirstLine: false,
+					max: 1
+				},
+				singleline: 6
+			}
+		],
+		'vue/script-indent': [ 'error', 'tab' ],
+		'vue/singleline-html-element-content-newline': 0
 	}
 };
