@@ -22,12 +22,6 @@ module.exports = {
 				objectsInArrays: false
 			}
 		],
-		'array-in-arrays': [
-			'always', {
-				arraysInArrays: false
-			}
-		],
-		'arrays-in-objects': 'always',
 		'comma-dangle': [ 'error', 'never' ],
 		'computed-property-spacing': [ 'error', 'always' ],
 		'indent': [ 'error', 'tab' ],
@@ -46,7 +40,6 @@ module.exports = {
 				objectsInObjects: false
 			}
 		],
-		'objects-in-arrays': 'always',
 		'prefer-template': 'error',
 		'quote-props': [ 'error','consistent-as-needed' ],
 		'quotes': [ 'error', 'single' ],

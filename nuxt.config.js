@@ -2,15 +2,7 @@ const pkg = require( './package' );
 
 module.exports = {
 	mode: 'universal',
-
-	/**
-	 * Build configuration
-	 */
 	build: {
-
-		/**
-		 * Webpack config
-		 */
 		extend( config, ctx ) {
 			// Run ESLint on save
 			if ( ctx.isDev && ctx.isClient ) {
@@ -23,15 +15,11 @@ module.exports = {
 			}
 
 			// Use relative paths
-			if ( ! ctx.isDev ) {
+			if ( !ctx.isDev ) {
 				config.output.publicPath = './_nuxt/';
 			}
 		}
 	},
-
-	/**
-	 * Global CSS
-	 */
 	css: [
 		{ src: 'swiper/dist/css/swiper.css', lang: 'css' },
 		{ src: '@/assets/scss/variables.scss', lang: 'scss' },
@@ -40,10 +28,6 @@ module.exports = {
 		{ src: '@/assets/scss/icons.scss', lang: 'scss' },
 		{ src: '@/assets/scss/swiper.scss', lang: 'scss' }
 	],
-
-	/**
-	 * Headers of the page
-	 */
 	head: {
 		title: pkg.name,
 		meta: [
@@ -68,17 +52,14 @@ module.exports = {
 			}
 		]
 	},
-
-	/**
-	 * Customize the progress-bar color
-	 */
 	loading: {
 		color: '#fff'
 	},
+
 	/**
 	 * Nuxt.js modules
 	 */
-	modules:  [[ 'nuxt-sass-resources-loader', [ '@/assets/scss/variables.scss' ]]],
+	modules: [ '@nuxtjs/style-resources' ],
 
 	/**
 	 * Plugins to load before mounting the App
@@ -95,5 +76,12 @@ module.exports = {
 		// Enable functionality when loading `dist/index.html`
 		// directly in the browser
 		mode: 'hash'
+	},
+
+	/**
+	 * Global Sass variables
+	 */
+	styleResources: {
+		sass: [ '@/assets/scss/variables.scss' ]
 	}
 };
