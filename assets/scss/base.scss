@@ -52,7 +52,7 @@ input {
 p {
 	font-size: 1em;
 
-	@media (min-width: $break-point-medium) {
+	@media (min-width: $breakpoint-medium) {
 		font-size: 1.2em;
 	}
 

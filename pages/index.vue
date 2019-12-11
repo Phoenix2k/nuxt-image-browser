@@ -40,7 +40,6 @@
 <script>
 import imageJSON from '@/assets/data/images.json';
 export default {
-
 	data() {
 		return {
 			imageBrowserOptions: {
@@ -82,7 +81,6 @@ export default {
 	},
 
 	methods: {
-
 		nextView() {
 			this.views.slideNext();
 		},
@@ -106,26 +104,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	.slide-home {
-		display: inline-block;
-		left: 1.25rem;
-		opacity: 0.8;
-		position: absolute;
-		top: 1.25rem;
-		transition: opacity 0.2s linear;
-		z-index: 20;
+.slide-home {
+	display: inline-block;
+	left: 1.25rem;
+	opacity: 0.8;
+	position: absolute;
+	top: 1.25rem;
+	transition: opacity 0.2s linear;
+	z-index: 20;
 
-		&:focus,
-		&:hover {
-			opacity: 1;
-		}
-
-		@media (min-width: $break-point-medium) {
-			font-size: 1.5em;
-		}
-
-		@media (min-width: $break-point-large) {
-			font-size: 2em;
-		}
+	&:focus,
+	&:hover {
+		opacity: 1;
 	}
+
+	@media (min-width: $breakpoint-medium) {
+		font-size: 1.5em;
+	}
+
+	@media (min-width: $breakpoint-large) {
+		font-size: 2em;
+	}
+}
 </style>
