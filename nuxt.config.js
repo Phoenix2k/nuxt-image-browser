@@ -82,6 +82,6 @@ module.exports = {
 	 * Global Sass variables
 	 */
 	styleResources: {
-		sass: [ '@/assets/scss/variables.scss' ]
+		scss: [ './assets/scss/variables.scss' ]
 	}
 };
