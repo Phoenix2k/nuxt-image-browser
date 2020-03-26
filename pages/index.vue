@@ -38,8 +38,14 @@
 </template>
 
 <script>
+import { directive } from 'vue-awesome-swiper';
 import imageJSON from '@/assets/data/images.json';
+
 export default {
+	directives: {
+		swiper: directive
+	},
+
 	data() {
 		return {
 			imageBrowserOptions: {

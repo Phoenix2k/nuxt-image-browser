@@ -21,7 +21,7 @@ module.exports = {
 		}
 	},
 	css: [
-		{ src: 'swiper/dist/css/swiper.css', lang: 'css' },
+		{ src: 'swiper/css/swiper.css', lang: 'css' },
 		{ src: '@/assets/scss/variables.scss', lang: 'scss' },
 		{ src: '@/assets/scss/base.scss', lang: 'scss' },
 		{ src: '@/assets/scss/buttons.scss', lang: 'scss' },
@@ -65,8 +65,7 @@ module.exports = {
 	 * Plugins to load before mounting the App
 	 */
 	plugins: [
-		{ src: '@/plugins/icons.js', ssr: true },
-		{ src: '@/plugins/vue-awesome-swiper.js', ssr: false }
+		{ src: '@/plugins/icons.js', ssr: true }
 	],
 
 	/**
