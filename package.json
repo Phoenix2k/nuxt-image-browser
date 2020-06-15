@@ -3,22 +3,22 @@
   "dependencies": {
     "cross-env": "^7.0.2",
     "nuxt": "^2.12.2",
-    "swiper": "^5.3.7",
-    "vue-awesome-swiper": "^4.1.0"
+    "swiper": "^5.4.3",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "description": "Image browser based on Nuxt.js",
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-loader": "^4.0.0",
+    "eslint": "^7.2.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.13.1",
-    "nodemon": "^2.0.3",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
     "sass-loader": "^8.0.2"
   },
   "engines": {
-    "node": "~12.13.0",
+    "node": "~14.2.0",
     "npm": "~6.14.0"
   },
   "name": "nuxt-image-browser",
