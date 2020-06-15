@@ -64,9 +64,7 @@ module.exports = {
 	/**
 	 * Plugins to load before mounting the App
 	 */
-	plugins: [
-		{ src: '@/plugins/icons.js', ssr: true }
-	],
+	plugins: [{ src: '@/plugins/icons.js', ssr: true }],
 
 	/**
 	 * Router
