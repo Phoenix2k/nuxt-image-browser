@@ -1,7 +1,6 @@
 const pkg = require( './package' );
 
 module.exports = {
-	mode: 'universal',
 	build: {
 		extend( config, ctx ) {
 			// Run ESLint on save
@@ -21,7 +20,7 @@ module.exports = {
 		}
 	},
 	css: [
-		{ src: 'swiper/css/swiper.css', lang: 'css' },
+		{ src: 'swiper/swiper-bundle.css', lang: 'css' },
 		{ src: '@/assets/scss/variables.scss', lang: 'scss' },
 		{ src: '@/assets/scss/base.scss', lang: 'scss' },
 		{ src: '@/assets/scss/buttons.scss', lang: 'scss' },

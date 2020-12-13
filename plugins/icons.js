@@ -1,4 +1,4 @@
-import Vue from 'vue';
 import Icons from '@/components/Icons.vue';
+import Vue from 'vue';
 
-Vue.component( 'icons', Icons );
+Vue.component( 'Icons', Icons );

@@ -1,24 +1,24 @@
 {
   "author": "Niko Pettersen",
   "dependencies": {
-    "cross-env": "^7.0.2",
-    "nuxt": "^2.12.2",
-    "swiper": "^5.4.3",
+    "cross-env": "^7.0.3",
+    "nuxt": "^2.14.11",
+    "swiper": "^6.4.1",
     "vue-awesome-swiper": "^4.1.1"
   },
   "description": "Image browser based on Nuxt.js",
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0",
+    "eslint": "^7.15.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "sass-loader": "^8.0.2"
+    "eslint-plugin-vue": "^7.2.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "sass-loader": "^10.1.0"
   },
   "engines": {
-    "node": "~14.2.0",
+    "node": "~14.8.0",
     "npm": "~6.14.0"
   },
   "name": "nuxt-image-browser",

@@ -3,7 +3,7 @@
 		<div class="swiper-wrapper">
 			<div class="swiper-slide swiper-slide-column">
 				<div class="swiper-content">
-					<button id="start" class="button button--start next-view" type="button">Start</button>
+					<button id="start" class="button button--start next-view" type="button" @click="nextView">Start</button>
 				</div>
 			</div>
 			<div class="swiper-slide disable-user-selection">
@@ -12,7 +12,7 @@
 						<use xlink:href="#icon-home" />
 					</svg>
 				</button>
-				<a class="prev-slide icon--left" title="Slide left">
+				<a class="prev-slide icon--left" title="Slide left" @click="prevSlide">
 					<svg class="icon icon-arrow-left">
 						<use xlink:href="#icon-arrow-left" />
 					</svg>
@@ -27,7 +27,7 @@
 						<div slot="pagination" class="swiper-pagination" />
 					</div>
 				</div>
-				<a class="next-slide">
+				<a class="next-slide" @click="nextSlide">
 					<svg class="icon icon-arrow-right" title="Slide right">
 						<use xlink:href="#icon-arrow-right" />
 					</svg>
@@ -87,9 +87,19 @@ export default {
 	},
 
 	methods: {
+
+		nextSlide() {
+			this.imageBrowser.slideNext();
+		},
+
 		nextView() {
 			this.views.slideNext();
 		},
+
+		prevSlide() {
+			this.imageBrowser.slidePrev();
+		},
+
 
 		resetImageBrowser() {
 			return new Promise( resolve => {
@@ -112,9 +122,9 @@ export default {
 <style lang="scss" scoped>
 .slide-home {
 	display: inline-block;
-	left: 1.25rem;
 	opacity: 0.8;
 	position: absolute;
+	right: 1.25rem;
 	top: 1.25rem;
 	transition: opacity 0.2s linear;
 	z-index: 20;
